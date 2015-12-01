@@ -1,0 +1,128 @@
+body{
+    background-color: aliceblue;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 50px;
+    z-index: 4;
+}
+nav h1{
+    float: left;
+    margin: 10px 0 0 40px;
+}
+nav h1 a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+}
+nav h1 a span{
+    color: aqua;
+}
+.menu{
+    float: right;
+}
+.menu ul{
+    margin: 5px 120px 0 0;
+}
+.menu li{
+    position: relative;
+    float: left;
+    margin: 0 60px;
+}
+.menu ul li span{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    height: 1em;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 50px 0 20px;
+}
+.menu li ul{
+    position: absolute;
+    top: -200px;
+    left: -75px;
+    transition: all 1s;
+    z-index: 1;
+}
+.menu li:hover ul{
+    top: 0;
+    padding-top: 60px;
+}
+.menu li ul li{
+    width: 130px;
+    text-align: left;
+    background-color: black;
+    height: 30px;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    z-index: 3;
+}
+.menu li ul li a{
+    padding: 5px 24px 5px 23px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu li ul:after{
+    content: "";
+    position: absolute;
+    top: 55px;
+    right: 32px;
+    width: 60px;
+    height: 60px;
+    background: black;
+    transform: rotate(45deg);
+}
+.main{
+    margin: 60px 250px 0 250px;
+}
+@keyframes slidy {
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    100% { left: -300%; }
+}
+#slider figure{
+    position: relative;
+    height: 400px;
+    width: 1200px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+#slider figure ul{
+    width: 500%;
+    height: 400px;
+    position: absolute;
+    margin: 0 0 0 -40px;
+    left: 0;
+    text-align: left;
+    animation: 10s slidy infinite;
+    list-style-type: none;
+}
+#slider figure ul li{
+    margin: 0 0 0 0;
+    float: left;
+}
+#slider figure ul li img{
+}
+#slider figure ul li .slideText{
+    background: green;
+}
+
