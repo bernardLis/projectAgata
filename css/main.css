@@ -12,7 +12,7 @@ header{
 }
 nav h1{
     float: left;
-    margin: 10px 0 0 40px;
+    margin: 10px 50px 0 200px;
 }
 nav h1 a{
     text-decoration: none;
@@ -27,7 +27,7 @@ nav h1 a span{
     float: right;
 }
 .menu ul{
-    margin: 5px 120px 0 0;
+    margin: 5px 200px 0 0;
 }
 .menu li{
     position: relative;
@@ -87,7 +87,7 @@ nav h1 a span{
     transform: rotate(45deg);
 }
 .main{
-    margin: 60px 250px 0 250px;
+    margin: 60px 200px 0 200px;
 }
 @keyframes slidy {
     0% { left: 0; }
@@ -104,7 +104,7 @@ nav h1 a span{
     height: 400px;
     width: 1200px;
     overflow: hidden;
-    border: 1px solid red;
+    margin: 0px;
 }
 #slider figure ul{
     width: 500%;
@@ -113,16 +113,65 @@ nav h1 a span{
     margin: 0 0 0 -40px;
     left: 0;
     text-align: left;
-    animation: 10s slidy infinite;
+    animation: 100s slidy infinite;
     list-style-type: none;
 }
 #slider figure ul li{
     margin: 0 0 0 0;
     float: left;
 }
+/*
 #slider figure ul li img{
+    width: 1200px;
+    height: 400px;
 }
-#slider figure ul li .slideText{
+#slider figure ul li .slideText h1{
     background: green;
+    position: relative;
+    z-index: 100;
 }
+/* tried to add text to my slides, failed. */
+.content{
+    background-color: white;
+    float: left;
+    width: 1200px;
+}
+.content #contentPictures img{
+    margin: 20px 20px 70px 50px;
+    position: relative;
 
+}
+.content #contentPictures #pic1{
+    text-decoration: underline;
+    box-sizing: border-box;
+    position: absolute;
+    margin: -135px 0 0 50px;
+    width: 329px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 5px;
+}
+.content #contentPictures #pic2{
+    text-decoration: underline;
+    box-sizing: border-box;
+    position: absolute;
+    margin: -135px 0 0 453px;
+    width: 329px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 5px;
+
+}
+#contentPictures #contentText{
+    box-sizing: border-box;
+    margin: 20px 50px 70px 0;
+    padding: 20px;
+    width: 329px;
+    height: 225px;
+    background-color: white;
+    float: right;
+    border: 1px solid lightgrey;
+}
+#contentPictures #contentText h2{
+    text-decoration: underline;
+}
