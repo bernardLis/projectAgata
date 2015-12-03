@@ -10,9 +10,12 @@ header{
     height: 50px;
     z-index: 4;
 }
+.mainWidth{
+    width: 1200px;
+}
 nav h1{
     float: left;
-    margin: 10px 50px 0 200px;
+    margin: 10px 0 0 260px;
 }
 nav h1 a{
     text-decoration: none;
@@ -27,7 +30,7 @@ nav h1 a span{
     float: right;
 }
 .menu ul{
-    margin: 5px 200px 0 0;
+    margin: 5px -100px 0 0;
 }
 .menu li{
     position: relative;
@@ -45,12 +48,12 @@ nav h1 a span{
     height: 1em;
     color: white;
     text-transform: uppercase;
-    margin: 10px 50px 0 20px;
+    margin: 10px 50px 0 0px;
 }
 .menu li ul{
     position: absolute;
     top: -200px;
-    left: -75px;
+    left: -50px;
     transition: all 1s;
     z-index: 1;
 }
@@ -104,7 +107,7 @@ nav h1 a span{
     height: 400px;
     width: 1200px;
     overflow: hidden;
-    margin: 0px;
+    margin: 0;
 }
 #slider figure ul{
     width: 500%;
@@ -134,12 +137,10 @@ nav h1 a span{
 .content{
     background-color: white;
     float: left;
-    width: 1200px;
 }
 .content #contentPictures img{
     margin: 20px 20px 70px 50px;
     position: relative;
-
 }
 .content #contentPictures #pic1{
     text-decoration: underline;
@@ -173,5 +174,10 @@ nav h1 a span{
     border: 1px solid lightgrey;
 }
 #contentPictures #contentText h2{
+    text-decoration: underline;
+}
+.catalogue h1 {
+    font-size: 22px;
+    color: grey;
     text-decoration: underline;
 }

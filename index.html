@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="mainWidth">
             <div class="logo">
                 <h1><a href="#">Sit <span>on</span> chair</a></h1>
             </div>
@@ -27,7 +27,7 @@
             </div>
         </nav>
     </header>
-    <div class="main">
+    <div class="main mainWidth">
         <div id="slider">
             <figure>
                 <ul>
@@ -67,7 +67,7 @@
             </figure>
         </div>
         <!-- dont know how to add text to my css slider... -->
-        <div class="content">
+        <div class="content mainWidth">
             <section id="contentPictures">
                 <img src="img/box1_img.jpg" alt="white chair" />
                 <h2 id="pic1">Chair CLAIR</h2>
@@ -75,12 +75,73 @@
                 <h2 id="pic2">Chair MARGARITA</h2>
                 <section id="contentText">
                     <h2>Lorem Ipsum</h2>
-                    <p1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    </p1>
+                    </p>
                 </section>
             </section>
         </div>
     </div>
+    <div class="catalogue mainWidth">
+        <h1>CENNIK</h1>
+        <div class="basicPlan">
+            <figure id="basicPlanText">
+                <h2>BASIC PLAN</h2>
+                <p>85</p>
+                <p>99</p>
+                <p>PLN/MSC</p>
+                <p>Zakup Towaru</p>
+                <p>Serwis</p>
+                <p>Dolacz</p>
+            </figure>
+        </div>
+        <div class="standardPlan">
+            <figure id="standardPlanText">
+                <h2>STANDARD PLAN</h2>
+                <p>95</p>
+                <p>99</p>
+                <p>PLN/MSC</p>
+                <p>Zakup towaru + dowoz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 5 lat</p>
+                <p>Dolacz</p>
+            </figure>
+        </div>
+        <div class="advancePlan">
+            <figure id="advancePlanText">
+                <h2>ADVANCE PLAN</h2>
+                <p>211</p>
+                <p>00</p>
+                <p>PLN/MSC</p>
+                <p>Zakup towaru + dowoz</p>
+                <p>Serwis</p>
+                <p>Gwarancja 6 lat</p>
+                <p>Porady projektanta</p>
+                <p>Dolacz</p>
+            </figure>
+        </div>
+    </div>
+    <div class="contactForm mainWidth">
+        <h1>KONTAKT</h1>
+        <form>
+            <input id="contactName" name="name" placeholder="Imie" required="required" type="text" />
+            <input id="contactEmail" name="email" placeholder="email" required="required" type="email" />
+            <input id="contactText" name="text" placeholder="Wiadomosc" required="required" type="text" />
+            <img src="img/red_chair.png" alt="red chair" />
+            <input id="checkBox" type="checkbox" name="checkbox" required="required"/>
+            <p>Zgadzam sie na przetwarzanie danych osobowych</p>
+            <input id="sendButton" type="button" value="WYSLIJ" />
+        </form>
+    </div>
+    <footer class="mainWidth">
+        <h6>Copyright 2014 | All Rights Reserved - Sit On Chair</h6>
+        <div class="social">
+            <img src="img/flickr.png" alt="flickr logo" />
+            <img src="img/pinterest.png" alt="flickr logo" />
+            <img src="img/twitter.png" alt="flickr logo" />
+            <img src="img/vimeo.png" alt="flickr logo" />
+        </div>
+        <h6>SIT <span>ON</span> CHAIR</h6>
+    </footer>
 </body>
 </html>
