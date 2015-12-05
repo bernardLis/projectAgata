@@ -1,5 +1,7 @@
 body{
     background-color: aliceblue;
+    width: 1200px;
+    margin: 50px 200px 0 200px;
 }
 header{
     position: fixed;
@@ -10,12 +12,9 @@ header{
     height: 50px;
     z-index: 4;
 }
-.mainWidth{
-    width: 1200px;
-}
 nav h1{
     float: left;
-    margin: 10px 0 0 260px;
+    margin: 10px 600px 0 200px;
 }
 nav h1 a{
     text-decoration: none;
@@ -26,15 +25,16 @@ nav h1 a{
 nav h1 a span{
     color: aqua;
 }
-.menu{
-    float: right;
-}
 .menu ul{
-    margin: 5px -100px 0 0;
+    float: left;
+    list-style: none;
+    margin: 5px 60px 0 0;
 }
 .menu li{
+    display: inline;
     position: relative;
-    float: left;
+}
+.menu li a{
     margin: 0 60px;
 }
 .menu ul li span{
@@ -48,7 +48,7 @@ nav h1 a span{
     height: 1em;
     color: white;
     text-transform: uppercase;
-    margin: 10px 50px 0 0px;
+    margin: 10px 50px 0 0;
 }
 .menu li ul{
     position: absolute;
@@ -62,6 +62,7 @@ nav h1 a span{
     padding-top: 60px;
 }
 .menu li ul li{
+    display: block;
     width: 130px;
     text-align: left;
     background-color: black;
@@ -89,10 +90,7 @@ nav h1 a span{
     background: black;
     transform: rotate(45deg);
 }
-.main{
-    margin: 60px 200px 0 200px;
-}
-@keyframes slidy {
+@keyframes slidy{
     0% { left: 0; }
     20% { left: 0; }
     25% { left: -100%; }
@@ -105,7 +103,6 @@ nav h1 a span{
 #slider figure{
     position: relative;
     height: 400px;
-    width: 1200px;
     overflow: hidden;
     margin: 0;
 }
@@ -115,7 +112,6 @@ nav h1 a span{
     position: absolute;
     margin: 0 0 0 -40px;
     left: 0;
-    text-align: left;
     animation: 100s slidy infinite;
     list-style-type: none;
 }
@@ -136,11 +132,9 @@ nav h1 a span{
 /* tried to add text to my slides, failed. */
 .content{
     background-color: white;
-    float: left;
 }
 .content #contentPictures img{
     margin: 20px 20px 70px 50px;
-    position: relative;
 }
 .content #contentPictures #pic1{
     text-decoration: underline;
@@ -176,8 +170,105 @@ nav h1 a span{
 #contentPictures #contentText h2{
     text-decoration: underline;
 }
-.catalogue h1 {
-    font-size: 22px;
-    color: grey;
-    text-decoration: underline;
+
+/* need to style it hard, add a span to create an udeline in the crazy colour */
+
+.catalogue{
+    background-color: lightgrey;
+    height: 600px;
 }
+.catalogue h1 {
+     font-size: 22px;
+     color: grey;
+     text-decoration: underline;
+     margin: 0 0 0 57px;
+    width: 100px;
+    height: 30px;
+    padding: 30px 0 0 0;
+ }
+.plans{
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 20px 0 0 57px;
+    padding: 20px;
+    width: 329px;
+    height: 400px;
+    border: 1px solid darkgrey;
+    float: left;
+}
+
+/* hard styling needed, need to create 2 circles, need to do the hover/click shit that
+they switch colours...  stylyze text, give each paragraph id? trololol. */
+.contactForm{
+    background-color: white;
+    height: 400px;
+}
+.contactForm h1{
+    font-size: 23px;
+    text-decoration: underline;
+    margin: 0 0 0 57px;
+    padding: 20px 0 0 0;
+}
+#contactName{
+    float: left;
+    height: 20px;
+    width: 640px;
+    margin: 30px 0 0 57px;
+    padding: 4px;
+    border: 3px solid aqua;
+}
+#contactEmail{
+    float: left;
+    height: 20px;
+    width: 640px;
+    margin: 10px 0 0 57px;
+    padding: 4px;
+    border: 3px solid aqua;
+}
+#contactText{
+    float: left;
+    height: 190px;
+    width: 640px;
+    margin: 10px 0 0 57px;
+    padding: 4px;
+    border: 3px solid aqua;
+}
+.contactForm img{
+    margin: 0 0 20px 120px;
+}
+#formLabel{
+    float: left;
+    margin: 20px 0 20px 120px;
+}
+#sendButton{
+    float: left;
+    margin: 20px 0 20px 120px;
+}
+
+/*nneds hard styling, need to find how to make the text input work from the beggining of the field..
+style style style. */
+
+footer{
+    height: 100px;
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+}
+footer h6{
+    float: left;
+    margin: 50px 0 0 0;
+}
+footer ul{
+    float: left;
+    list-style: none;
+    margin: 40px 0 0 500px;
+ }
+footer ul li{
+    display: inline;
+}
+footer h5{
+    float: left;
+    margin: 50px 50px 0 50px;
+}
+
+/*styling styling styling make it shine like chrome tyres! */
