@@ -1,0 +1,27 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body{
+  width: $mainWidth;
+  margin: 50px auto 0 auto;
+}
+header {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo{
+  float: left;
+}
+.menu{
+  float: right;
+  li{
+    position: relative;
+  }
+}
+#menuInMenu{
+  position: absolute;
+}

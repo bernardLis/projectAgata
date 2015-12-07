@@ -1,3 +1,4 @@
+/*
 body{
     background-color: aliceblue;
     width: 1200px;
@@ -131,6 +132,7 @@ nav h1 a span{
     z-index: 100;
 }
 /* tried to add text to my slides, failed. */
+/*
 .content{
     background-color: white;
 }
@@ -173,7 +175,7 @@ nav h1 a span{
 }
 
 /* need to style it hard, add a span to create an udeline in the crazy colour */
-
+/*
 .catalogue{
     background-color: lightgrey;
     height: 600px;
@@ -205,6 +207,7 @@ nav h1 a span{
 
 /* hard styling needed, need to create 2 circles, need to do the hover/click shit that
 they switch colours...  stylyze text, give each paragraph id? trololol. */
+/*
 .contactForm{
     background-color: white;
     height: 400px;
@@ -283,7 +286,7 @@ they switch colours...  stylyze text, give each paragraph id? trololol. */
 }
 
 /*need to create a checkbox spirit, need to know how to display placegolder in my wiadomosc textarea.. . */
-
+/*
 footer{
     color: #cdcdcd;
     height: 100px;
