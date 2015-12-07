@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Agata Meble</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600,500,700,800,400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header>
@@ -83,7 +83,7 @@
         </div>
     </div>
     <div class="catalogue">
-        <h1>CENNIK</h1>
+        <h1>CENNIK<span></span></h1>
         <div class="plans basicPlan">
             <figure id="basicPlanText">
                 <h2>BASIC PLAN</h2>
@@ -122,17 +122,19 @@
         </div>
     </div>
     <div class="contactForm">
-        <h1>KONTAKT</h1>
+        <h1>KONTAKT<span></span></h1>
         <form>
             <input id="contactName" class="formStyle" name="name" placeholder="Imie" required="required" type="text" />
             <input id="contactEmail" class="formStyle" name="email" placeholder="email" required="required" type="email" />
-            <input id="contactText" class="formStyle" name="text" placeholder="Wiadomosc" required="required" type="text" />
+            <textarea id="contactText" class="formStyle" name="text" placeholder="Wiadomosc" required="required" type="text">
+            </textarea>
             <img src="img/red_chair.png" alt="red chair" />
             <label id="formLabel">
                 <input id="checkBox" type="checkbox" name="checkbox" required="required"/>
-                Zgadzam sie na przetwarzanie danych osobowych
+                Zgadzam sie na przetwarzanie<br>
+                danych osobowych
             </label>
-            <input id="sendButton" type="button" value="WYSLIJ" />
+            <a id="sendButton" href="#">WYSLIJ</a>
         </form>
     </div>
     <footer>

@@ -2,6 +2,7 @@ body{
     background-color: aliceblue;
     width: 1200px;
     margin: 50px 200px 0 200px;
+    font-family: 'Raleway', sans-serif;
 }
 header{
     position: fixed;
@@ -178,14 +179,19 @@ nav h1 a span{
     height: 600px;
 }
 .catalogue h1 {
-     font-size: 22px;
-     color: grey;
-     text-decoration: underline;
-     margin: 0 0 0 57px;
-    width: 100px;
-    height: 30px;
-    padding: 30px 0 0 0;
+    font-family: 'Ralway Bold', sans-serif;
+    font-size: 22px;
+    margin: 0 0 0 57px;
+    padding: 20px 0 0 0;
  }
+.catalogue h1 span{
+    box-sizing: border-box;
+    width: 325px;
+    height: 8px;
+    background-color: #24baa0;
+    position: absolute;
+    margin: 30px 0 0 -85px;
+}
 .plans{
     box-sizing: border-box;
     display: inline-block;
@@ -204,71 +210,109 @@ they switch colours...  stylyze text, give each paragraph id? trololol. */
     height: 400px;
 }
 .contactForm h1{
-    font-size: 23px;
-    text-decoration: underline;
+    font-family: 'Ralway Bold', sans-serif;
+    font-size: 22px;
     margin: 0 0 0 57px;
     padding: 20px 0 0 0;
 }
+.contactForm h1 span{
+    width: 325px;
+    height: 8px;
+    background-color: #24baa0;
+    position: absolute;
+    margin: 30px 0 0 -110px;
+}
 #contactName{
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
     float: left;
-    height: 20px;
+    height: 65px;
     width: 640px;
     margin: 30px 0 0 57px;
     padding: 4px;
-    border: 3px solid aqua;
+    border: 1px solid #a3e2d7;
 }
 #contactEmail{
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
     float: left;
-    height: 20px;
+    height: 65px;
     width: 640px;
     margin: 10px 0 0 57px;
     padding: 4px;
-    border: 3px solid aqua;
+    border: 1px solid #a3e2d7;
 }
 #contactText{
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
     float: left;
     height: 190px;
     width: 640px;
     margin: 10px 0 0 57px;
     padding: 4px;
-    border: 3px solid aqua;
+    border: 1px solid #a3e2d7;
 }
 .contactForm img{
-    margin: 0 0 20px 120px;
+    margin: 0 0 0 120px;
 }
 #formLabel{
+    font-family: 'Raleway Medium', sans-serif;
+    font-size: 22px;
+    color: #cdcdcd;
     float: left;
     margin: 20px 0 20px 120px;
 }
 #sendButton{
-    float: left;
-    margin: 20px 0 20px 120px;
+    margin: 0 100px 0 0;
+    box-sizing: border-box;
+    float: right;
+    display: block;
+    width: 340px;
+    height: 70px;
+    text-align: center;
+    background-color: #24baa0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Ralway Bold', sans-serif;
+    font-size: 34px;
+    border-radius: 5px;
+    padding: 15px;
 }
 
-/*nneds hard styling, need to find how to make the text input work from the beggining of the field..
-style style style. */
+/*need to create a checkbox spirit, need to know how to display placegolder in my wiadomosc textarea.. . */
 
 footer{
+    color: #cdcdcd;
     height: 100px;
     background-color: white;
     margin: 0;
     padding: 30px;
 }
 footer h6{
+    font-size: 16px;
+    font-family: 'Raleway Medium', sans-serif;
     float: left;
     margin: 50px 0 0 0;
 }
 footer ul{
     float: left;
     list-style: none;
-    margin: 40px 0 0 500px;
+    margin: 40px 0 0 300px;
  }
 footer ul li{
     display: inline;
 }
 footer h5{
+    font-size: 20px;
+    font-family: 'Raleway SemiBold', sans-serif;
     float: left;
     margin: 50px 50px 0 50px;
 }
+footer h5 span{
+    font-family: 'Raleway ExtraBold', sans-serif;
+}
 
-/*styling styling styling make it shine like chrome tyres! */
+/*footer done */
