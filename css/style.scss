@@ -1,9 +1,13 @@
 @import "variables.scss";
 @import "mixins.scss";
+/*header need to change the suub meny coz it disapears too quickly*/
 
 body{
   width: $mainWidth;
   margin: 50px auto 0 auto;
+}
+img video canvas{
+  max-width: 100%;
 }
 header {
   height: 50px;
@@ -12,52 +16,139 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 .container{
   position: relative;
 }
 .logo{
+  font-size: 14px;
   float: left;
+  color: $navFontColor;
+  font-family: $heavyFontFamily;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 0 0 70px;
+  span{
+    color: $secondaryColor;
+  }
 }
 nav{
+  margin: 0 80px 0 0;
   float: right;
   li{
     position: relative;
+    display: inline-block;
+    padding: 0 30px 0 30px;
+    a{
+      color: $navFontColor;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $boldFontFamily;
+      font-size: 14px;
+      width: 120px;
+      height: 40px;
+    }
   }
 }
 .subMenuArrow{
-  border-bottom: 8px solid black;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
   display: none;
-  height: 0;
   position: absolute;
-  right: 45px;
-  top: 220%;
-  width: 0;
+  top: 45px;
+  left: 45px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  transform: rotate(45deg);
 }
 .subMenu {
+  box-sizing: content-box;
+  padding: 0 0 0 10px;
+  margin: 0;
   background: black;
   position:absolute;
   display: none;
   top: 50px;
   line-height: 30px;
-  text-transform: none;
-  text-align: left;
-  width: 120px;
-  left: 10px;
-  font-size: 14px;
+  width: 100px;
+  left: 15px;
+  font-size: 16px;
   z-index: 2;
-  transition: all 1s;
+  transition: all 3s;
   li {
     margin: 0;
-    padding-left: 20px;
+    padding: 0;
+    a{
+      text-transform: none;
+      font-family: $mediumFontFamily;
+      font-size: 16px;
+      text-align: left;
+    }
   }
 }
-.menu li:hover ul{
+.menu li:hover ul,
+.menu li:hover .subMenuArrow {
   display: block;
 }
-li {
-  display: inline-block;
-  padding: 0 30px 0 30px;
+
+/*slider */
+
+#slider{
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  height: 500px;
+  -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
+  -moz-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
+  box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
+  img{
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    float: left;
+  }
+  h1{
+    position: absolute;
+    float: right;
+    top: 140px;
+    right: 255px;
+    text-transform: uppercase;
+    color: black;
+    font-family: $mediumFontFamily;
+    font-size: 40px;
+    span{
+      color: $secondaryColor;
+    }
+  }
+  p{
+    position: absolute;
+    float: right;
+    width: 300px;
+    top: 220px;
+    right: 280px;
+    text-align: center;
+    font-family: $regularFontFamily;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  a{
+    position: absolute;
+    display: block;
+    float: right;
+    top: 330px;
+    right: 300px;
+    padding: 10px 0 0 ;
+    width: 265px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: $secondaryColor;
+    color: $buttonFontColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $mediumFontFamily;
+    font-size: 24px;
+    text-align: center;
+  }
 }
+
+/* content */
