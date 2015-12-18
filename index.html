@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Agata Meble</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:600,500,700,800,400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body>
-<header>
-    <div class="containter">
-        <div class="siteWidth">
+<header class="container">
+    <div class="siteWidth">
+        <div class="menuContainer">
             <a class="logo" href="#">Sit <span>on</span> chair</a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">O firmie</a>
-                        <div class="subMenuArrow"> </div>
-                        <ul class="subMenu">
-                            <li><a href="#">Aktualności</a></li>
-                            <li><a href="#">Nasz team</a></li>
-                            <li><a href="#">Historia</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+            <ul class="menuFlex">
+                <li><a href="#">O firmie</a>
+                    <div class="subMenuArrow"></div>
+                    <ul class="subMenu">
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
         </div>
     </div>
 </header>
@@ -104,8 +104,7 @@
     <form>
         <input id="contactName" class="formStyle" name="name" placeholder="Imie" required="required" type="text" />
         <input id="contactEmail" class="formStyle" name="email" placeholder="email" required="required" type="email" />
-        <textarea id="contactText" class="formStyle" name="text" placeholder="Wiadomosc" required="required" type="text">
-        </textarea>
+        <textarea id="contactText" class="formStyle" name="text" placeholder="Wiadomosc" required="required" type="text"></textarea>
         <img src="img/red_chair.png" alt="red chair" />
         <label id="formLabel">
             <input id="checkBox" type="checkbox" name="checkbox" required="required"/>

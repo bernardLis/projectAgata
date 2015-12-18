@@ -1,85 +1,66 @@
-/*header need to change the suub meny coz it disapears too quickly*/
 body {
-  width: 1200px;
-  margin: 50px auto 0 auto; }
+  font-size: 16px;
+  box-sizing: content-box; }
+
+.container {
+  width: 100%; }
+
+.siteWidth {
+  width: 80%;
+  margin: 0 auto; }
 
 img video canvas {
   max-width: 100%; }
 
 header {
-  height: 50px;
-  width: 100%;
   background-color: black;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   z-index: 3; }
 
-.container {
-  position: relative; }
-
-.logo {
-  font-size: 14px;
-  float: left;
+.menuContainer {
+  height: 50px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between; }
+.menuContainer .logo {
+  margin: 1.5% 0 0 0;
+  font-size: 1rem;
   color: white;
   font-family: "Raleway Heavy", sans-serif;
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px 0 0 70px; }
-.logo span {
+  text-transform: uppercase; }
+.menuContainer .logo span {
   color: #27c7ab; }
-
-nav {
-  margin: 0 80px 0 0;
-  float: right; }
-nav li {
+.menuContainer .menuFlex {
+  width: 30%;
+  display: flex;
+  justify-content: space-between; }
+.menuContainer .menuFlex li {
   position: relative;
-  display: inline-block;
-  padding: 0 30px 0 30px; }
-nav li a {
+  border: 2px solid darkblue; }
+.menuContainer .menuFlex li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Raleway Bold", sans-serif;
-  font-size: 14px;
-  width: 120px;
-  height: 40px; }
-
-.subMenuArrow {
-  display: none;
+  font-size: 1rem; }
+.menuContainer .menuFlex li .subMenuArrow {
   position: absolute;
-  top: 45px;
-  left: 45px;
-  width: 50px;
-  height: 50px;
+  top: 270%;
+  right: 30%;
+  width: 20px;
+  height: 20px;
   background-color: black;
   transform: rotate(45deg); }
-
-.subMenu {
-  box-sizing: content-box;
-  padding: 0 0 0 10px;
-  margin: 0;
-  background: black;
+.menuContainer .menuFlex li .subMenu {
   position: absolute;
-  display: none;
-  top: 50px;
-  line-height: 30px;
-  width: 100px;
-  left: 15px;
-  font-size: 16px;
-  z-index: 2;
-  transition: all 3s; }
-.subMenu li {
-  margin: 0;
-  padding: 0; }
-.subMenu li a {
-  text-transform: none;
-  font-family: "Raleway Medium", sans-serif;
-  font-size: 16px;
-  text-align: left; }
-
-.menu li:hover ul, .menu li:hover .subMenuArrow {
-  display: block; }
+  top: 300%;
+  right: -50%;
+  background-color: black; }
+.menuContainer .menuFlex li .subMenu li {
+  list-style: none; }
 
 /*slider */
 #slider {
