@@ -12,6 +12,7 @@ body {
 img video canvas {
   max-width: 100%; }
 
+/* menu */
 header {
   background-color: black;
   position: fixed;
@@ -38,6 +39,7 @@ header {
   display: flex;
   justify-content: space-between; }
 .menuContainer .menuFlex li {
+  padding: 5% 2%;
   position: relative;
   border: 2px solid darkblue; }
 .menuContainer .menuFlex li a {
@@ -47,72 +49,67 @@ header {
   font-family: "Raleway Bold", sans-serif;
   font-size: 1rem; }
 .menuContainer .menuFlex li .subMenuArrow {
+  padding: 5%;
+  display: none;
   position: absolute;
-  top: 270%;
+  top: 110%;
   right: 30%;
   width: 20px;
   height: 20px;
   background-color: black;
   transform: rotate(45deg); }
 .menuContainer .menuFlex li .subMenu {
+  display: none;
   position: absolute;
-  top: 300%;
-  right: -50%;
+  top: 125%;
+  right: -30%;
   background-color: black; }
 .menuContainer .menuFlex li .subMenu li {
   list-style: none; }
+.menuContainer .menuFlex li:first-child:hover .subMenuArrow {
+  display: block; }
+.menuContainer .menuFlex li:first-child:hover .subMenu {
+  display: block; }
 
 /*slider */
 #slider {
-  position: relative;
-  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
   padding: 10px;
   height: 500px;
   -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24);
   box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24); }
-#slider img {
-  position: absolute;
-  top: 110px;
-  left: 100px;
-  float: left; }
-#slider h1 {
-  position: absolute;
-  float: right;
-  top: 140px;
-  right: 255px;
+#slider #sliderImg img {
+  width: 100%; }
+#slider #sliderTextContent {
+  text-align: center; }
+#slider #sliderTextContent h1 {
+  margin: 0 0 7% 0;
   text-transform: uppercase;
   color: black;
   font-family: "Raleway Medium", sans-serif;
-  font-size: 40px; }
-#slider h1 span {
+  font-size: 2.5rem; }
+#slider #sliderTextContent h1 span {
   color: #27c7ab; }
-#slider p {
-  position: absolute;
-  float: right;
-  width: 300px;
-  top: 220px;
-  right: 280px;
+#slider #sliderTextContent p {
+  margin: 0 0 7% 0;
   text-align: center;
   font-family: "Ralway Regular", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 150%; }
-#slider a {
-  position: absolute;
-  display: block;
-  float: right;
-  top: 330px;
-  right: 300px;
-  padding: 10px 0 0;
-  width: 265px;
-  height: 40px;
+#slider #sliderTextContent a {
+  padding: 2% 5%;
   border-radius: 10px;
   background-color: #27c7ab;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Raleway Medium", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center; }
 
 /* content */

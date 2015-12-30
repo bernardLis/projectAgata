@@ -15,6 +15,9 @@ body{
 img video canvas{
   max-width: 100%;
 }
+
+/* menu */
+
 header{
   background-color: black;
   position: fixed;
@@ -43,6 +46,7 @@ header{
     display: flex;
     justify-content: space-between;
       li{
+        padding: 5% 2% ;
         position: relative;
         border: 2px solid darkblue;
         a{
@@ -53,8 +57,10 @@ header{
           font-size: 1rem;
         }
         .subMenuArrow{
+          padding: 5%;
+          display: none;
           position: absolute;
-          top: 270%;
+          top: 110%;
           right: 30%;
           width: 20px;
           height: 20px;
@@ -62,80 +68,75 @@ header{
           transform: rotate(45deg);
         }
         .subMenu{
+          display: none;
           position: absolute;
-          top: 300%;
-          right: -50%;
+          top: 125%;
+          right: -30%;
           background-color: black;
           li{
             list-style: none;
           }
         }
       }
+    li:first-child:hover{
+      .subMenuArrow{
+        display: block;
+      }
+      .subMenu{
+        display: block;
+      }
     }
-
+  }
 }
-
-
-
-
 
 /*slider */
 
 #slider{
-  position: relative;
-  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
   padding: 10px;
   height: 500px;
   -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
   -moz-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
   box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
-  img{
-    position: absolute;
-    top: 110px;
-    left: 100px;
-    float: left;
-  }
-  h1{
-    position: absolute;
-    float: right;
-    top: 140px;
-    right: 255px;
-    text-transform: uppercase;
-    color: black;
-    font-family: $mediumFontFamily;
-    font-size: 40px;
-    span{
-      color: $secondaryColor;
+  #sliderImg{
+    img{
+      width: 100%;
     }
   }
-  p{
-    position: absolute;
-    float: right;
-    width: 300px;
-    top: 220px;
-    right: 280px;
+  #sliderTextContent{
     text-align: center;
-    font-family: $regularFontFamily;
-    font-size: 14px;
-    line-height: 150%;
-  }
-  a{
-    position: absolute;
-    display: block;
-    float: right;
-    top: 330px;
-    right: 300px;
-    padding: 10px 0 0 ;
-    width: 265px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: $secondaryColor;
-    color: $buttonFontColor;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: $mediumFontFamily;
-    font-size: 24px;
-    text-align: center;
+    h1{
+      margin: 0 0 7% 0;
+      text-transform: uppercase;
+      color: black;
+      font-family: $mediumFontFamily;
+      font-size: 2.5rem;
+      span{
+        color: $secondaryColor;
+      }
+    }
+    p{
+      margin: 0 0 7% 0;
+      text-align: center;
+      font-family: $regularFontFamily;
+      font-size: 1rem;
+      line-height: 150%;
+    }
+    a{
+      padding: 2% 5%;
+      border-radius: 10px;
+      background-color: $secondaryColor;
+      color: $buttonFontColor;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $mediumFontFamily;
+      font-size: 1.5rem;
+      text-align: center;
+    }
   }
 }
 
