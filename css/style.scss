@@ -91,6 +91,11 @@ header{
 
 /*slider */
 
+.sliderContainer{
+  -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
+  -moz-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
+  box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
+}
 #slider{
   display: flex;
   flex-flow: row wrap;
@@ -99,9 +104,6 @@ header{
   margin: 50px 0 0 0;
   padding: 10px;
   height: 500px;
-  -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
-  -moz-box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
-  box-shadow: inset 0px -200px 138px -70px rgba(0,0,0,0.24);
   #sliderImg{
     img{
       width: 100%;
@@ -141,3 +143,56 @@ header{
 }
 
 /* content */
+
+#contentPictures{
+  margin: 3% 0 7% 0;
+  border: 1px solid gold;
+  display: flex;
+  flex-flow: row wrap;
+  .contentPictureBox{
+    border: 2px solid silver;
+    margin: 0 auto;
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .contentChairName{
+      width: 100%;
+      position: absolute;
+      bottom: 12%;
+      border: 2px solid green;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 5% 0;
+      h2{
+        margin: 0 0 0 5%;
+        font-size: 1rem;
+        font-family: $mediumFontFamily;
+      }
+      .contentTextUnderline{
+        width: 43%;
+        background-color: $secondaryColor;
+        padding: 1%;
+        margin: 1% 0 0 5%;
+        display: block;
+      }
+    }
+  }
+  .contentLastBox {
+    width: 30%;
+    h2 {
+      font-size: 1rem;
+      font-family: $mediumFontFamily;
+      margin: 7% 0 0 5%;
+    }
+    .contentTextUnderline {
+      width: 43%;
+      background-color: $secondaryColor;
+      padding: 1%;
+      margin: 1% 0 0 5%;
+      display: block;
+    }
+    p{
+      margin: 7% 5%;
+    }
+  }
+}

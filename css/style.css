@@ -72,6 +72,11 @@ header {
   display: block; }
 
 /*slider */
+.sliderContainer {
+  -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24); }
+
 #slider {
   display: flex;
   flex-flow: row wrap;
@@ -79,10 +84,7 @@ header {
   align-items: center;
   margin: 50px 0 0 0;
   padding: 10px;
-  height: 500px;
-  -webkit-box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24);
-  box-shadow: inset 0px -200px 138px -70px rgba(0, 0, 0, 0.24); }
+  height: 500px; }
 #slider #sliderImg img {
   width: 100%; }
 #slider #sliderTextContent {
@@ -113,5 +115,47 @@ header {
   text-align: center; }
 
 /* content */
+#contentPictures {
+  margin: 3% 0 7% 0;
+  border: 1px solid gold;
+  display: flex;
+  flex-flow: row wrap; }
+#contentPictures .contentPictureBox {
+  border: 2px solid silver;
+  margin: 0 auto;
+  position: relative; }
+#contentPictures .contentPictureBox img {
+  width: 100%; }
+#contentPictures .contentPictureBox .contentChairName {
+  width: 100%;
+  position: absolute;
+  bottom: 12%;
+  border: 2px solid green;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5% 0; }
+#contentPictures .contentPictureBox .contentChairName h2 {
+  margin: 0 0 0 5%;
+  font-size: 1rem;
+  font-family: "Raleway Medium", sans-serif; }
+#contentPictures .contentPictureBox .contentChairName .contentTextUnderline {
+  width: 43%;
+  background-color: #27c7ab;
+  padding: 1%;
+  margin: 1% 0 0 5%;
+  display: block; }
+#contentPictures .contentLastBox {
+  width: 30%; }
+#contentPictures .contentLastBox h2 {
+  font-size: 1rem;
+  font-family: "Raleway Medium", sans-serif;
+  margin: 7% 0 0 5%; }
+#contentPictures .contentLastBox .contentTextUnderline {
+  width: 43%;
+  background-color: #27c7ab;
+  padding: 1%;
+  margin: 1% 0 0 5%;
+  display: block; }
+#contentPictures .contentLastBox p {
+  margin: 7% 5%; }
 
 /*# sourceMappingURL=style.css.map */
